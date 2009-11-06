@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_13-b05 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-Name: Jetty Server Adaptor Plug-in
+Bundle-SymbolicName: fr.inria.score.jetty.serveradaptor;singleton:=true
+Bundle-Version: 1.0.5
+Bundle-Vendor: Score Team - INRIA
+Bundle-Description: Generic Server adaptor for Jetty
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0
+Require-Bundle: org.eclipse.wst.common.project.facet.core,org.eclipse.
+ wst.server.core,org.eclipse.wst.server.ui,org.eclipse.jst.common.proj
+ ect.facet.core,org.eclipse.jst.server.core,org.eclipse.jst.server.gen
+ eric.core,org.eclipse.jst.server.generic.ui,org.eclipse.jst.server.ui
+

@@ -1,0 +1,20 @@
+<project name="deployextension"  default="deploy.j2ee.web"  basedir=".">
+	<property name="pause.deploy" value="2"/>
+	<property name="pause.undeploy" value="2"/>
+
+	<target name="deploy.j2ee.web">
+	  <echo>
+      Deploying on Jetty 7
+    </echo>
+    <copy todir="${jettyHome}/webapps">
+      <fileset dir="${project.location}/target">
+        <include name="${module.name}*.war"/>
+      </fileset>
+      <regexpmapper from="^(.*)\.war$$" to="${module.name}.war"/>
+    </copy>
+	</target>
+
+	<target name="undeploy.j2ee.web">
+		<delete file="${jettyHome}/webapps/${module.name}.war" failonerror="false"/>
+	</target>
+</project>
